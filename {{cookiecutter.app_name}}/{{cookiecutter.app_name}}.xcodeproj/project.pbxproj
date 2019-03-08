@@ -231,8 +231,8 @@
 			buildConfigurationList = 2A1E77501F384BFD006C84D4 /* Build configuration list for PBXNativeTarget "{{cookiecutter.app_name}}" */;
 			buildPhases = (
 				553FC23A2140470C001D9362 /* R.swift */,
+				812387322232459E00BC65E8 /* SwiftFormat */,
 				2A1E772F1F384BFC006C84D4 /* Sources */,
-				FC9CA61F1F83C1B700B8EB94 /* SwiftLint */,
 				2A1E77301F384BFC006C84D4 /* Frameworks */,
 				2A1E77311F384BFC006C84D4 /* Resources */,
 			);
@@ -340,19 +340,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/{{cookiecutter.app_name}}/Resources/Generated/R.generated.swift\"\n";
 		};
-		FC9CA61F1F83C1B700B8EB94 /* SwiftLint */ = {
+		812387322232459E00BC65E8 /* SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
 			);
-			name = SwiftLint;
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint";
+			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"${SRCROOT}/{{cookiecutter.app_name}}/\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
