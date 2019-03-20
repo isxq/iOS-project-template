@@ -11,6 +11,7 @@ target '{{cookiecutter.app_name}}' do
 
   pod 'R.swift', '5.0.0'
   pod 'SwiftFormat/CLI'
+  pod 'ApplyStyleKit'
 
   # development pods
    pod 'FlexibleLayout', :path => './{{cookiecutter.app_name}}/DevelopmentPods/FlexibleLayout/'
