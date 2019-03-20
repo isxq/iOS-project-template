@@ -12,6 +12,9 @@ target '{{cookiecutter.app_name}}' do
   pod 'R.swift', '5.0.0'
   pod 'SwiftFormat/CLI'
 
+  # development pods
+   pod 'FlexibleLayout', :path => './{{cookiecutter.app_name}}/DevelopmentPods/Podspecs/'
+
   target '{{cookiecutter.app_name}}Tests' do
     inherit! :search_paths
   end
@@ -23,7 +26,7 @@ post_install do |installer|
       config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
       config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
       config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
-      # config.build_settings['SWIFT_VERSION'] = '4.2'
+      config.build_settings['SWIFT_VERSION'] = '4.2'
     end
   end
 end
