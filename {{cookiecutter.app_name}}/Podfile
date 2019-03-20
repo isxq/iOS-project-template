@@ -15,6 +15,7 @@ target '{{cookiecutter.app_name}}' do
 
   # development pods
    pod 'FlexibleLayout', :path => './{{cookiecutter.app_name}}/DevelopmentPods/FlexibleLayout/'
+   pod 'Form', :path => './{{cookiecutter.app_name}}/DevelopmentPods/Form/'
 
   target '{{cookiecutter.app_name}}Tests' do
     inherit! :search_paths
