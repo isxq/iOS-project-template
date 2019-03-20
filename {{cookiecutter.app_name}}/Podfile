@@ -13,7 +13,7 @@ target '{{cookiecutter.app_name}}' do
   pod 'SwiftFormat/CLI'
 
   # development pods
-   pod 'FlexibleLayout', :path => './{{cookiecutter.app_name}}/DevelopmentPods/Podspecs/'
+   pod 'FlexibleLayout', :path => './{{cookiecutter.app_name}}/DevelopmentPods/FlexibleLayout/'
 
   target '{{cookiecutter.app_name}}Tests' do
     inherit! :search_paths
